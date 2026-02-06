@@ -1,0 +1,586 @@
+{
+  "skill_names": [
+    "Skill_0",
+    "Skill_1",
+    "Skill_2",
+    "Skill_3",
+    "Skill_4",
+    "Skill_5",
+    "Skill_6",
+    "Skill_7",
+    "Skill_8",
+    "Skill_9",
+    "Skill_10",
+    "Skill_11",
+    "Skill_12",
+    "Skill_13",
+    "Skill_14",
+    "Skill_15",
+    "Skill_16",
+    "Skill_17",
+    "Skill_18",
+    "Skill_19",
+    "Skill_20",
+    "Skill_21",
+    "Skill_22",
+    "Skill_23",
+    "Skill_24",
+    "Skill_25",
+    "Skill_26",
+    "Skill_27",
+    "Skill_28",
+    "Skill_29",
+    "Skill_30",
+    "Skill_31",
+    "Skill_32",
+    "Skill_33",
+    "Skill_34",
+    "Skill_35",
+    "Skill_36",
+    "Skill_37",
+    "Skill_38",
+    "Skill_39",
+    "Skill_40",
+    "Skill_41",
+    "Skill_42",
+    "Skill_43",
+    "Skill_44",
+    "Skill_45",
+    "Skill_46",
+    "Skill_47",
+    "Skill_48",
+    "Skill_49",
+    "Skill_50",
+    "Skill_51",
+    "Skill_52",
+    "Skill_53",
+    "Skill_54",
+    "Skill_55",
+    "Skill_56",
+    "Skill_57",
+    "Skill_58",
+    "Skill_59",
+    "Skill_60",
+    "Skill_61",
+    "Skill_62",
+    "Skill_63",
+    "Skill_64",
+    "Skill_65",
+    "Skill_66",
+    "Skill_67",
+    "Skill_68",
+    "Skill_69",
+    "Skill_70",
+    "Skill_71",
+    "Skill_72",
+    "Skill_73",
+    "Skill_74",
+    "Skill_75",
+    "Skill_76",
+    "Skill_77",
+    "Skill_78",
+    "Skill_79",
+    "Skill_80",
+    "Skill_81",
+    "Skill_82",
+    "Skill_83",
+    "Skill_84",
+    "Skill_85",
+    "Skill_86",
+    "Skill_87",
+    "Skill_88",
+    "Skill_89",
+    "Skill_90",
+    "Skill_91",
+    "Skill_92",
+    "Skill_93",
+    "Skill_94",
+    "Skill_95",
+    "Skill_96",
+    "Skill_97",
+    "Skill_98",
+    "Skill_99",
+    "Skill_100",
+    "Skill_101",
+    "Skill_102",
+    "Skill_103",
+    "Skill_104",
+    "Skill_105",
+    "Skill_106",
+    "Skill_107",
+    "Skill_108",
+    "Skill_109",
+    "Skill_110",
+    "Skill_111",
+    "Skill_112",
+    "Skill_113",
+    "Skill_114",
+    "Skill_115",
+    "Skill_116",
+    "Skill_117",
+    "Skill_118",
+    "Skill_119",
+    "Skill_120",
+    "Skill_121"
+  ],
+  "rules": [
+    {
+      "type": "prerequisite",
+      "prerequisite": 0,
+      "target": 1,
+      "weight": 1.0,
+      "description": "Skill_0 → Skill_1"
+    },
+    {
+      "type": "prerequisite",
+      "prerequisite": 0,
+      "target": 2,
+      "weight": 1.0,
+      "description": "Skill_0 → Skill_2"
+    },
+    {
+      "type": "prerequisite",
+      "prerequisite": 0,
+      "target": 4,
+      "weight": 1.0,
+      "description": "Skill_0 → Skill_4"
+    },
+    {
+      "type": "prerequisite",
+      "prerequisite": 0,
+      "target": 5,
+      "weight": 1.0,
+      "description": "Skill_0 → Skill_5"
+    },
+    {
+      "type": "prerequisite",
+      "prerequisite": 0,
+      "target": 6,
+      "weight": 1.0,
+      "description": "Skill_0 → Skill_6"
+    },
+    {
+      "type": "prerequisite",
+      "prerequisite": 0,
+      "target": 8,
+      "weight": 1.0,
+      "description": "Skill_0 → Skill_8"
+    },
+    {
+      "type": "prerequisite",
+      "prerequisite": 0,
+      "target": 10,
+      "weight": 1.0,
+      "description": "Skill_0 → Skill_10"
+    },
+    {
+      "type": "prerequisite",
+      "prerequisite": 0,
+      "target": 12,
+      "weight": 1.0,
+      "description": "Skill_0 → Skill_12"
+    },
+    {
+      "type": "prerequisite",
+      "prerequisite": 0,
+      "target": 14,
+      "weight": 1.0,
+      "description": "Skill_0 → Skill_14"
+    },
+    {
+      "type": "prerequisite",
+      "prerequisite": 0,
+      "target": 22,
+      "weight": 1.0,
+      "description": "Skill_0 → Skill_22"
+    },
+    {
+      "type": "prerequisite",
+      "prerequisite": 0,
+      "target": 24,
+      "weight": 1.0,
+      "description": "Skill_0 → Skill_24"
+    },
+    {
+      "type": "prerequisite",
+      "prerequisite": 0,
+      "target": 31,
+      "weight": 1.0,
+      "description": "Skill_0 → Skill_31"
+    },
+    {
+      "type": "prerequisite",
+      "prerequisite": 0,
+      "target": 44,
+      "weight": 1.0,
+      "description": "Skill_0 → Skill_44"
+    },
+    {
+      "type": "prerequisite",
+      "prerequisite": 1,
+      "target": 5,
+      "weight": 1.0,
+      "description": "Skill_1 → Skill_5"
+    },
+    {
+      "type": "prerequisite",
+      "prerequisite": 1,
+      "target": 7,
+      "weight": 1.0,
+      "description": "Skill_1 → Skill_7"
+    },
+    {
+      "type": "prerequisite",
+      "prerequisite": 2,
+      "target": 121,
+      "weight": 1.0,
+      "description": "Skill_2 → Skill_121"
+    },
+    {
+      "type": "prerequisite",
+      "prerequisite": 3,
+      "target": 11,
+      "weight": 1.0,
+      "description": "Skill_3 → Skill_11"
+    },
+    {
+      "type": "prerequisite",
+      "prerequisite": 4,
+      "target": 5,
+      "weight": 1.0,
+      "description": "Skill_4 → Skill_5"
+    },
+    {
+      "type": "similar",
+      "skill_a": 0,
+      "skill_b": 9,
+      "threshold": 0.3,
+      "weight": 0.8,
+      "description": "Skill_0 ↔ Skill_9"
+    },
+    {
+      "type": "similar",
+      "skill_a": 1,
+      "skill_b": 9,
+      "threshold": 0.3,
+      "weight": 0.8,
+      "description": "Skill_1 ↔ Skill_9"
+    },
+    {
+      "type": "similar",
+      "skill_a": 1,
+      "skill_b": 11,
+      "threshold": 0.3,
+      "weight": 0.8,
+      "description": "Skill_1 ↔ Skill_11"
+    },
+    {
+      "type": "similar",
+      "skill_a": 1,
+      "skill_b": 24,
+      "threshold": 0.3,
+      "weight": 0.8,
+      "description": "Skill_1 ↔ Skill_24"
+    },
+    {
+      "type": "similar",
+      "skill_a": 1,
+      "skill_b": 31,
+      "threshold": 0.3,
+      "weight": 0.8,
+      "description": "Skill_1 ↔ Skill_31"
+    },
+    {
+      "type": "similar",
+      "skill_a": 1,
+      "skill_b": 44,
+      "threshold": 0.3,
+      "weight": 0.8,
+      "description": "Skill_1 ↔ Skill_44"
+    },
+    {
+      "type": "similar",
+      "skill_a": 1,
+      "skill_b": 48,
+      "threshold": 0.3,
+      "weight": 0.8,
+      "description": "Skill_1 ↔ Skill_48"
+    },
+    {
+      "type": "similar",
+      "skill_a": 1,
+      "skill_b": 49,
+      "threshold": 0.3,
+      "weight": 0.8,
+      "description": "Skill_1 ↔ Skill_49"
+    },
+    {
+      "type": "similar",
+      "skill_a": 3,
+      "skill_b": 121,
+      "threshold": 0.3,
+      "weight": 0.8,
+      "description": "Skill_3 ↔ Skill_121"
+    },
+    {
+      "type": "similar",
+      "skill_a": 4,
+      "skill_b": 9,
+      "threshold": 0.3,
+      "weight": 0.8,
+      "description": "Skill_4 ↔ Skill_9"
+    },
+    {
+      "type": "similar",
+      "skill_a": 5,
+      "skill_b": 8,
+      "threshold": 0.3,
+      "weight": 0.8,
+      "description": "Skill_5 ↔ Skill_8"
+    },
+    {
+      "type": "similar",
+      "skill_a": 5,
+      "skill_b": 9,
+      "threshold": 0.3,
+      "weight": 0.8,
+      "description": "Skill_5 ↔ Skill_9"
+    },
+    {
+      "type": "similar",
+      "skill_a": 5,
+      "skill_b": 10,
+      "threshold": 0.3,
+      "weight": 0.8,
+      "description": "Skill_5 ↔ Skill_10"
+    },
+    {
+      "type": "similar",
+      "skill_a": 6,
+      "skill_b": 8,
+      "threshold": 0.3,
+      "weight": 0.8,
+      "description": "Skill_6 ↔ Skill_8"
+    },
+    {
+      "type": "similar",
+      "skill_a": 6,
+      "skill_b": 9,
+      "threshold": 0.3,
+      "weight": 0.8,
+      "description": "Skill_6 ↔ Skill_9"
+    },
+    {
+      "type": "similar",
+      "skill_a": 6,
+      "skill_b": 10,
+      "threshold": 0.3,
+      "weight": 0.8,
+      "description": "Skill_6 ↔ Skill_10"
+    },
+    {
+      "type": "similar",
+      "skill_a": 6,
+      "skill_b": 11,
+      "threshold": 0.3,
+      "weight": 0.8,
+      "description": "Skill_6 ↔ Skill_11"
+    },
+    {
+      "type": "similar",
+      "skill_a": 6,
+      "skill_b": 14,
+      "threshold": 0.3,
+      "weight": 0.8,
+      "description": "Skill_6 ↔ Skill_14"
+    },
+    {
+      "type": "similar",
+      "skill_a": 7,
+      "skill_b": 8,
+      "threshold": 0.3,
+      "weight": 0.8,
+      "description": "Skill_7 ↔ Skill_8"
+    },
+    {
+      "type": "similar",
+      "skill_a": 7,
+      "skill_b": 9,
+      "threshold": 0.3,
+      "weight": 0.8,
+      "description": "Skill_7 ↔ Skill_9"
+    },
+    {
+      "type": "similar",
+      "skill_a": 8,
+      "skill_b": 9,
+      "threshold": 0.3,
+      "weight": 0.8,
+      "description": "Skill_8 ↔ Skill_9"
+    },
+    {
+      "type": "similar",
+      "skill_a": 8,
+      "skill_b": 10,
+      "threshold": 0.3,
+      "weight": 0.8,
+      "description": "Skill_8 ↔ Skill_10"
+    },
+    {
+      "type": "similar",
+      "skill_a": 8,
+      "skill_b": 11,
+      "threshold": 0.3,
+      "weight": 0.8,
+      "description": "Skill_8 ↔ Skill_11"
+    },
+    {
+      "type": "similar",
+      "skill_a": 9,
+      "skill_b": 10,
+      "threshold": 0.3,
+      "weight": 0.8,
+      "description": "Skill_9 ↔ Skill_10"
+    },
+    {
+      "type": "similar",
+      "skill_a": 9,
+      "skill_b": 11,
+      "threshold": 0.3,
+      "weight": 0.8,
+      "description": "Skill_9 ↔ Skill_11"
+    },
+    {
+      "type": "similar",
+      "skill_a": 9,
+      "skill_b": 24,
+      "threshold": 0.3,
+      "weight": 0.8,
+      "description": "Skill_9 ↔ Skill_24"
+    },
+    {
+      "type": "similar",
+      "skill_a": 9,
+      "skill_b": 31,
+      "threshold": 0.3,
+      "weight": 0.8,
+      "description": "Skill_9 ↔ Skill_31"
+    },
+    {
+      "type": "similar",
+      "skill_a": 10,
+      "skill_b": 11,
+      "threshold": 0.3,
+      "weight": 0.8,
+      "description": "Skill_10 ↔ Skill_11"
+    },
+    {
+      "type": "compositional",
+      "components": [
+        0,
+        1
+      ],
+      "target": 2,
+      "weight": 1.0,
+      "description": "Skill_0 ∧ Skill_1 → Skill_2"
+    },
+    {
+      "type": "compositional",
+      "components": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "target": 4,
+      "weight": 1.0,
+      "description": "Skill_0 ∧ Skill_1 ∧ Skill_2 ∧ Skill_3 → Skill_4"
+    },
+    {
+      "type": "compositional",
+      "components": [
+        0,
+        1,
+        4
+      ],
+      "target": 5,
+      "weight": 1.0,
+      "description": "Skill_0 ∧ Skill_1 ∧ Skill_4 → Skill_5"
+    },
+    {
+      "type": "compositional",
+      "components": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "target": 8,
+      "weight": 1.0,
+      "description": "Skill_0 ∧ Skill_1 ∧ Skill_2 ∧ Skill_4 → Skill_8"
+    },
+    {
+      "type": "compositional",
+      "components": [
+        0,
+        1,
+        2
+      ],
+      "target": 10,
+      "weight": 1.0,
+      "description": "Skill_0 ∧ Skill_1 ∧ Skill_2 → Skill_10"
+    },
+    {
+      "type": "compositional",
+      "components": [
+        0,
+        1
+      ],
+      "target": 14,
+      "weight": 1.0,
+      "description": "Skill_0 ∧ Skill_1 → Skill_14"
+    },
+    {
+      "type": "compositional",
+      "components": [
+        0,
+        1
+      ],
+      "target": 22,
+      "weight": 1.0,
+      "description": "Skill_0 ∧ Skill_1 → Skill_22"
+    },
+    {
+      "type": "compositional",
+      "components": [
+        1,
+        3,
+        4
+      ],
+      "target": 7,
+      "weight": 1.0,
+      "description": "Skill_1 ∧ Skill_3 ∧ Skill_4 → Skill_7"
+    },
+    {
+      "type": "compositional",
+      "components": [
+        1,
+        2,
+        3
+      ],
+      "target": 30,
+      "weight": 1.0,
+      "description": "Skill_1 ∧ Skill_2 ∧ Skill_3 → Skill_30"
+    },
+    {
+      "type": "compositional",
+      "components": [
+        1,
+        3
+      ],
+      "target": 32,
+      "weight": 1.0,
+      "description": "Skill_1 ∧ Skill_3 → Skill_32"
+    }
+  ]
+}

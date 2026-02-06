@@ -1,0 +1,456 @@
+{
+  "skill_names": [
+    "Skill_0",
+    "Skill_1",
+    "Skill_2",
+    "Skill_3",
+    "Skill_4",
+    "Skill_5",
+    "Skill_6",
+    "Skill_7",
+    "Skill_8",
+    "Skill_9",
+    "Skill_10"
+  ],
+  "rules": [
+    {
+      "type": "prerequisite",
+      "prerequisite": 1,
+      "target": 0,
+      "weight": 1.0,
+      "description": "Skill_1 → Skill_0"
+    },
+    {
+      "type": "similar",
+      "skill_a": 0,
+      "skill_b": 2,
+      "threshold": 0.1,
+      "weight": 0.8,
+      "description": "Skill_0 ↔ Skill_2"
+    },
+    {
+      "type": "similar",
+      "skill_a": 0,
+      "skill_b": 3,
+      "threshold": 0.1,
+      "weight": 0.8,
+      "description": "Skill_0 ↔ Skill_3"
+    },
+    {
+      "type": "similar",
+      "skill_a": 0,
+      "skill_b": 4,
+      "threshold": 0.1,
+      "weight": 0.8,
+      "description": "Skill_0 ↔ Skill_4"
+    },
+    {
+      "type": "similar",
+      "skill_a": 0,
+      "skill_b": 5,
+      "threshold": 0.1,
+      "weight": 0.8,
+      "description": "Skill_0 ↔ Skill_5"
+    },
+    {
+      "type": "similar",
+      "skill_a": 0,
+      "skill_b": 6,
+      "threshold": 0.1,
+      "weight": 0.8,
+      "description": "Skill_0 ↔ Skill_6"
+    },
+    {
+      "type": "similar",
+      "skill_a": 0,
+      "skill_b": 7,
+      "threshold": 0.1,
+      "weight": 0.8,
+      "description": "Skill_0 ↔ Skill_7"
+    },
+    {
+      "type": "similar",
+      "skill_a": 0,
+      "skill_b": 8,
+      "threshold": 0.1,
+      "weight": 0.8,
+      "description": "Skill_0 ↔ Skill_8"
+    },
+    {
+      "type": "similar",
+      "skill_a": 0,
+      "skill_b": 9,
+      "threshold": 0.1,
+      "weight": 0.8,
+      "description": "Skill_0 ↔ Skill_9"
+    },
+    {
+      "type": "similar",
+      "skill_a": 0,
+      "skill_b": 10,
+      "threshold": 0.1,
+      "weight": 0.8,
+      "description": "Skill_0 ↔ Skill_10"
+    },
+    {
+      "type": "similar",
+      "skill_a": 1,
+      "skill_b": 2,
+      "threshold": 0.1,
+      "weight": 0.8,
+      "description": "Skill_1 ↔ Skill_2"
+    },
+    {
+      "type": "similar",
+      "skill_a": 1,
+      "skill_b": 3,
+      "threshold": 0.1,
+      "weight": 0.8,
+      "description": "Skill_1 ↔ Skill_3"
+    },
+    {
+      "type": "similar",
+      "skill_a": 1,
+      "skill_b": 4,
+      "threshold": 0.1,
+      "weight": 0.8,
+      "description": "Skill_1 ↔ Skill_4"
+    },
+    {
+      "type": "similar",
+      "skill_a": 1,
+      "skill_b": 5,
+      "threshold": 0.1,
+      "weight": 0.8,
+      "description": "Skill_1 ↔ Skill_5"
+    },
+    {
+      "type": "similar",
+      "skill_a": 1,
+      "skill_b": 6,
+      "threshold": 0.1,
+      "weight": 0.8,
+      "description": "Skill_1 ↔ Skill_6"
+    },
+    {
+      "type": "similar",
+      "skill_a": 1,
+      "skill_b": 7,
+      "threshold": 0.1,
+      "weight": 0.8,
+      "description": "Skill_1 ↔ Skill_7"
+    },
+    {
+      "type": "similar",
+      "skill_a": 1,
+      "skill_b": 8,
+      "threshold": 0.1,
+      "weight": 0.8,
+      "description": "Skill_1 ↔ Skill_8"
+    },
+    {
+      "type": "similar",
+      "skill_a": 1,
+      "skill_b": 9,
+      "threshold": 0.1,
+      "weight": 0.8,
+      "description": "Skill_1 ↔ Skill_9"
+    },
+    {
+      "type": "similar",
+      "skill_a": 1,
+      "skill_b": 10,
+      "threshold": 0.1,
+      "weight": 0.8,
+      "description": "Skill_1 ↔ Skill_10"
+    },
+    {
+      "type": "similar",
+      "skill_a": 2,
+      "skill_b": 3,
+      "threshold": 0.1,
+      "weight": 0.8,
+      "description": "Skill_2 ↔ Skill_3"
+    },
+    {
+      "type": "similar",
+      "skill_a": 2,
+      "skill_b": 4,
+      "threshold": 0.1,
+      "weight": 0.8,
+      "description": "Skill_2 ↔ Skill_4"
+    },
+    {
+      "type": "similar",
+      "skill_a": 2,
+      "skill_b": 5,
+      "threshold": 0.1,
+      "weight": 0.8,
+      "description": "Skill_2 ↔ Skill_5"
+    },
+    {
+      "type": "similar",
+      "skill_a": 2,
+      "skill_b": 6,
+      "threshold": 0.1,
+      "weight": 0.8,
+      "description": "Skill_2 ↔ Skill_6"
+    },
+    {
+      "type": "similar",
+      "skill_a": 2,
+      "skill_b": 7,
+      "threshold": 0.1,
+      "weight": 0.8,
+      "description": "Skill_2 ↔ Skill_7"
+    },
+    {
+      "type": "similar",
+      "skill_a": 2,
+      "skill_b": 8,
+      "threshold": 0.1,
+      "weight": 0.8,
+      "description": "Skill_2 ↔ Skill_8"
+    },
+    {
+      "type": "similar",
+      "skill_a": 2,
+      "skill_b": 9,
+      "threshold": 0.1,
+      "weight": 0.8,
+      "description": "Skill_2 ↔ Skill_9"
+    },
+    {
+      "type": "similar",
+      "skill_a": 2,
+      "skill_b": 10,
+      "threshold": 0.1,
+      "weight": 0.8,
+      "description": "Skill_2 ↔ Skill_10"
+    },
+    {
+      "type": "similar",
+      "skill_a": 3,
+      "skill_b": 4,
+      "threshold": 0.1,
+      "weight": 0.8,
+      "description": "Skill_3 ↔ Skill_4"
+    },
+    {
+      "type": "similar",
+      "skill_a": 3,
+      "skill_b": 5,
+      "threshold": 0.1,
+      "weight": 0.8,
+      "description": "Skill_3 ↔ Skill_5"
+    },
+    {
+      "type": "similar",
+      "skill_a": 3,
+      "skill_b": 6,
+      "threshold": 0.1,
+      "weight": 0.8,
+      "description": "Skill_3 ↔ Skill_6"
+    },
+    {
+      "type": "similar",
+      "skill_a": 3,
+      "skill_b": 7,
+      "threshold": 0.1,
+      "weight": 0.8,
+      "description": "Skill_3 ↔ Skill_7"
+    },
+    {
+      "type": "similar",
+      "skill_a": 3,
+      "skill_b": 8,
+      "threshold": 0.1,
+      "weight": 0.8,
+      "description": "Skill_3 ↔ Skill_8"
+    },
+    {
+      "type": "similar",
+      "skill_a": 3,
+      "skill_b": 9,
+      "threshold": 0.1,
+      "weight": 0.8,
+      "description": "Skill_3 ↔ Skill_9"
+    },
+    {
+      "type": "similar",
+      "skill_a": 3,
+      "skill_b": 10,
+      "threshold": 0.1,
+      "weight": 0.8,
+      "description": "Skill_3 ↔ Skill_10"
+    },
+    {
+      "type": "similar",
+      "skill_a": 4,
+      "skill_b": 5,
+      "threshold": 0.1,
+      "weight": 0.8,
+      "description": "Skill_4 ↔ Skill_5"
+    },
+    {
+      "type": "similar",
+      "skill_a": 4,
+      "skill_b": 6,
+      "threshold": 0.1,
+      "weight": 0.8,
+      "description": "Skill_4 ↔ Skill_6"
+    },
+    {
+      "type": "similar",
+      "skill_a": 4,
+      "skill_b": 7,
+      "threshold": 0.1,
+      "weight": 0.8,
+      "description": "Skill_4 ↔ Skill_7"
+    },
+    {
+      "type": "similar",
+      "skill_a": 4,
+      "skill_b": 8,
+      "threshold": 0.1,
+      "weight": 0.8,
+      "description": "Skill_4 ↔ Skill_8"
+    },
+    {
+      "type": "similar",
+      "skill_a": 4,
+      "skill_b": 9,
+      "threshold": 0.1,
+      "weight": 0.8,
+      "description": "Skill_4 ↔ Skill_9"
+    },
+    {
+      "type": "similar",
+      "skill_a": 4,
+      "skill_b": 10,
+      "threshold": 0.1,
+      "weight": 0.8,
+      "description": "Skill_4 ↔ Skill_10"
+    },
+    {
+      "type": "similar",
+      "skill_a": 5,
+      "skill_b": 6,
+      "threshold": 0.1,
+      "weight": 0.8,
+      "description": "Skill_5 ↔ Skill_6"
+    },
+    {
+      "type": "similar",
+      "skill_a": 5,
+      "skill_b": 7,
+      "threshold": 0.1,
+      "weight": 0.8,
+      "description": "Skill_5 ↔ Skill_7"
+    },
+    {
+      "type": "similar",
+      "skill_a": 5,
+      "skill_b": 8,
+      "threshold": 0.1,
+      "weight": 0.8,
+      "description": "Skill_5 ↔ Skill_8"
+    },
+    {
+      "type": "similar",
+      "skill_a": 5,
+      "skill_b": 9,
+      "threshold": 0.1,
+      "weight": 0.8,
+      "description": "Skill_5 ↔ Skill_9"
+    },
+    {
+      "type": "similar",
+      "skill_a": 5,
+      "skill_b": 10,
+      "threshold": 0.1,
+      "weight": 0.8,
+      "description": "Skill_5 ↔ Skill_10"
+    },
+    {
+      "type": "similar",
+      "skill_a": 6,
+      "skill_b": 7,
+      "threshold": 0.1,
+      "weight": 0.8,
+      "description": "Skill_6 ↔ Skill_7"
+    },
+    {
+      "type": "similar",
+      "skill_a": 6,
+      "skill_b": 8,
+      "threshold": 0.1,
+      "weight": 0.8,
+      "description": "Skill_6 ↔ Skill_8"
+    },
+    {
+      "type": "similar",
+      "skill_a": 6,
+      "skill_b": 9,
+      "threshold": 0.1,
+      "weight": 0.8,
+      "description": "Skill_6 ↔ Skill_9"
+    },
+    {
+      "type": "similar",
+      "skill_a": 6,
+      "skill_b": 10,
+      "threshold": 0.1,
+      "weight": 0.8,
+      "description": "Skill_6 ↔ Skill_10"
+    },
+    {
+      "type": "similar",
+      "skill_a": 7,
+      "skill_b": 8,
+      "threshold": 0.1,
+      "weight": 0.8,
+      "description": "Skill_7 ↔ Skill_8"
+    },
+    {
+      "type": "similar",
+      "skill_a": 7,
+      "skill_b": 9,
+      "threshold": 0.1,
+      "weight": 0.8,
+      "description": "Skill_7 ↔ Skill_9"
+    },
+    {
+      "type": "similar",
+      "skill_a": 7,
+      "skill_b": 10,
+      "threshold": 0.1,
+      "weight": 0.8,
+      "description": "Skill_7 ↔ Skill_10"
+    },
+    {
+      "type": "similar",
+      "skill_a": 8,
+      "skill_b": 9,
+      "threshold": 0.1,
+      "weight": 0.8,
+      "description": "Skill_8 ↔ Skill_9"
+    },
+    {
+      "type": "similar",
+      "skill_a": 8,
+      "skill_b": 10,
+      "threshold": 0.1,
+      "weight": 0.8,
+      "description": "Skill_8 ↔ Skill_10"
+    },
+    {
+      "type": "similar",
+      "skill_a": 9,
+      "skill_b": 10,
+      "threshold": 0.1,
+      "weight": 0.8,
+      "description": "Skill_9 ↔ Skill_10"
+    }
+  ]
+}
