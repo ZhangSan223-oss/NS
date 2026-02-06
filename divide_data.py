@@ -1,16 +1,10 @@
 import json
 import random
-#from bintrees import FastRBTree
 
 min_log = 15
 
 
 def divide_data():
-    '''
-    1. delete students who have fewer than min_log response logs
-    2. divide dataset into train_set, val_set and test_set (0.7:0.1:0.2)
-    :return:
-    '''
     with open('data/Assist/log_data.json', encoding='utf8') as i_f:
         stus = json.load(i_f)
     # 1. delete students who have fewer than min_log response logs
@@ -53,7 +47,7 @@ def divide_data():
     with open('data/Assist/train_set.json', 'w', encoding='utf8') as output_file:
         json.dump(train_set, output_file, indent=4, ensure_ascii=False)
     with open('data/Assist/val_set.json', 'w', encoding='utf8') as output_file:
-        json.dump(val_set, output_file, indent=4, ensure_ascii=False)    # 直接用test_set作为val_set
+        json.dump(val_set, output_file, indent=4, ensure_ascii=False)   
     with open('data/Assist/test_set.json', 'w', encoding='utf8') as output_file:
         json.dump(test_set, output_file, indent=4, ensure_ascii=False)
 
