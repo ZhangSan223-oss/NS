@@ -4,9 +4,6 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 
-# ------------------------------------------------------------
-# 1. Shared Embeddings
-# ------------------------------------------------------------
 class SharedEmbedding(nn.Module):
     def __init__(self, n_students, n_exer, student_dim=32, item_dim=32, disc_dim=8):
         super().__init__()
@@ -22,9 +19,7 @@ class SharedEmbedding(nn.Module):
         return stu, item, disc
 
 
-# ------------------------------------------------------------
-# 2. Neural Predictor (主预测器)
-# ------------------------------------------------------------
+
 class NeuralPredictor(nn.Module):
     def __init__(self, input_dim: int, hidden_dims=(64, 32), dropout=0.3):
         super().__init__()
@@ -41,10 +36,7 @@ class NeuralPredictor(nn.Module):
         return torch.sigmoid(self.fc3(x)).squeeze(-1)
 
 
-# ------------------------------------------------------------
-# 3. Differentiable Rule Engine
-#    —— 只做结构约束（prior），不再接收 prob
-# ------------------------------------------------------------
+
 class DifferentiableRuleEngine(nn.Module):
     def __init__(self,
                  knowledge_n: int,
@@ -77,28 +69,28 @@ class DifferentiableRuleEngine(nn.Module):
 
         logic_losses = {}
 
-        # prerequisite: α_a ≤ α_b
+        
         if self.prereq_rules:
             loss = []
             for a, b in self.prereq_rules:
                 loss.append(F.relu(alpha_sym[:, a] - alpha_sym[:, b]).mean())
             logic_losses['prereq'] = torch.stack(loss).mean()
 
-        # similarity
+        
         if self.sim_pairs:
             loss = []
             for i, j in self.sim_pairs:
                 loss.append(F.mse_loss(alpha_sym[:, i], alpha_sym[:, j]))
             logic_losses['sim'] = torch.stack(loss).mean()
 
-        # smooth hierarchy
+        
         if self.enable_smooth and self.prereq_rules:
             loss = []
             for a, b in self.prereq_rules:
                 loss.append((alpha_sym[:, a] - alpha_sym[:, b]).pow(2).mean())
             logic_losses['smooth'] = torch.stack(loss).mean()
 
-        # weak monotonicity
+        
         if self.enable_mono:
             mean_alpha = alpha_sym.mean(dim=1, keepdim=True)
             logic_losses['mono'] = F.relu(mean_alpha - alpha_sym).mean()
@@ -109,7 +101,7 @@ class DifferentiableRuleEngine(nn.Module):
                 min_comp = comp_alpha.min(dim=1).values    # (B,)
                 loss.append(F.relu(min_comp - alpha_sym[:, target]).mean())
             logic_losses['comp'] = torch.stack(loss).mean()
-        # student-difficulty consistency (weak)
+        
         if disc_emb is not None:
             diff = torch.sigmoid(disc_emb.mean(dim=1))
             ability = alpha_sym.mean(dim=1)
@@ -122,9 +114,7 @@ class DifferentiableRuleEngine(nn.Module):
         return alpha_sym, total_loss, logic_losses
 
 
-# ------------------------------------------------------------
-# 4. Neuro-Symbolic CDM
-# ------------------------------------------------------------
+
 class NeuroSymbolicCD(nn.Module):
     def __init__(self,
                  n_students: int,
@@ -142,7 +132,7 @@ class NeuroSymbolicCD(nn.Module):
         self.embed = SharedEmbedding(n_students, n_exer,
                                      student_dim, item_dim, disc_dim)
 
-        # latent mastery (student ability prior)
+        
         self.mastery_inner = nn.Embedding(n_students, 32)
         self.mastery_out = nn.Linear(32, knowledge_n)
 
@@ -158,7 +148,7 @@ class NeuroSymbolicCD(nn.Module):
             sim_pairs=sim_pairs,
             compositional_rules=compositional_rules
         )
-        # rule weights（全部是正则）
+        
         self.rule_weights = {
             'prereq': 1.0,
             'sim': 0.5,
@@ -176,11 +166,11 @@ class NeuroSymbolicCD(nn.Module):
         stu_emb, item_emb, disc_emb = self.embed(stu_idx, exer_idx)
         q_vec = torch.relu(self.q_proj(self.Q[exer_idx]))
 
-        # neural prediction (主预测)
+        
         x = torch.cat([stu_emb, item_emb, disc_emb, q_vec], dim=-1)
         prob_neural = self.neural(x)
 
-        # symbolic mastery prior
+        
         mastery = torch.sigmoid(self.mastery_out(self.mastery_inner(stu_idx)))
         alpha_sym, logic_loss, logic_losses = self.symbolic(
             mastery,
@@ -188,11 +178,11 @@ class NeuroSymbolicCD(nn.Module):
             disc_emb=disc_emb
         )
 
-        # optional: symbolic-assisted probability
+        
         masked = alpha_sym * self.Q[exer_idx]
         prob_sym = masked.sum(dim=1) / (self.Q[exer_idx].sum(dim=1) + 1e-6)
 
-        # 推荐：仍然融合（但 symbolic 只是辅助）
+        
         prob = 0.7 * prob_neural + 0.3 * prob_sym
 
         return {
