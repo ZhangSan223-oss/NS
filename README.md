@@ -1,11 +1,11 @@
-# NCD_NS
+# NSCD
 
 A neuro-symbolic learning-based cognitive diagnosis model implementation that combines logical rule constraints for assessing student knowledge mastery.
 
 ## Project Structure
 
 ```
-NCD_NS
+NSCD
 ├── main.py                 # Training and evaluation main program
 ├── models.py              # NeuroSymbolicCD model implementation
 ├── data_utils.py          # Data loading and preprocessing utilities
@@ -101,4 +101,5 @@ Model outputs on test set:
 
 - **Accuracy**: Binary classification accuracy
 - **AUC**: Area under ROC curve
+
 - **RMSE**: Root mean square error
